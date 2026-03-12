@@ -1,6 +1,15 @@
+import HeroHalo from "../components/HeroHalo";
+import FloatingHeroBlobs from "../components/FloatingHeroBlobs";
+import ScrollSpyMenu from "../components/ScrollSpyMenu";
+import ExpertiseGrid from "../components/ExpertiseGrid";
+import WorkflowTimeline from "../components/WorkflowTimeline";
+
 export default function Home() {
   return (
     <>
+      {/* Navigation latérale interactive */}
+      <ScrollSpyMenu />
+
       {/* ── Navigation ── */}
       <nav className="nav" id="nav">
         <div className="container nav__inner">
@@ -8,7 +17,8 @@ export default function Home() {
             DXV <span>:: Systems</span>
           </a>
           <ul className="nav__links">
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Prestations</a></li>
+            <li><a href="#expertise">Deep Dives</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -17,7 +27,9 @@ export default function Home() {
 
       {/* ── Hero Section ── */}
       <section className="hero section" id="hero">
-        <div className="container">
+        <FloatingHeroBlobs />
+        <HeroHalo />
+        <div className="container relative z-10">
           <p className="hero__prefix animate-in">DXV :: init_sequence</p>
           <h1 className="hero__title animate-in delay-1">
             Solid foundations.<br />
@@ -33,7 +45,7 @@ export default function Home() {
               Démarrer un projet →
             </a>
             <a href="#services" className="btn btn--ghost">
-              Explorer les services
+              Explorer les prestations
             </a>
           </div>
         </div>
@@ -63,11 +75,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Services Section ── */}
+      {/* ── Services / Prestations Section ── */}
       <section className="section" id="services">
         <div className="container">
-          <p className="section__label">// services</p>
-          <h2 className="section__title">Ce que je résous</h2>
+          <p className="section__label">// prestations</p>
+          <h2 className="section__title">Prestations Techniques</h2>
           <p className="section__desc">
             Trois approches, un seul objectif : débloquer votre projet et le
             rendre production-ready.
@@ -113,7 +125,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── About / Expertise ── */}
+      {/* ── Domaines d'Expertise ── */}
+      <section className="section" id="expertise">
+        <div className="container">
+          <p className="section__label">// stack_technique</p>
+          <h2 className="section__title">Domaines d&apos;Expertise</h2>
+          <p className="section__desc">
+            Les technologies et méthodologies que je déploie en production.
+          </p>
+
+          <ExpertiseGrid />
+        </div>
+      </section>
+
+      {/* ── Workflow de Mission ── */}
+      <section className="section" id="workflow">
+        <div className="container">
+          <p className="section__label">// process</p>
+          <h2 className="section__title">Workflow de Mission</h2>
+          <p className="section__desc">
+            Un process structuré de bout en bout. Vous savez exactement où en est votre projet à chaque instant.
+          </p>
+
+          <WorkflowTimeline />
+        </div>
+      </section>
+
+      {/* ── About / Profil ── */}
       <section className="section" id="about">
         <div className="container">
           <p className="section__label">// à propos</p>

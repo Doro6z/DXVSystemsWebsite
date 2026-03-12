@@ -1,0 +1,50 @@
+{
+  "vinland-1": {
+    "id": "vinland-1",
+    "client": "Project Vinland Saga",
+    "title": "Core Combat V1 (Swords)",
+    "status": "in_progress",
+    "progress": 70,
+    "startDate": "2026-03-08",
+    "deadline": "2026-03-09T18:00:00Z",
+    "objectives": [
+      {
+        "name": "Phase 1: Architecture C++ & Locomotion",
+        "status": "completed",
+        "price": 0
+      },
+      {
+        "name": "Phase 2: Expansion 4 Armes + Roue des Counters",
+        "status": "pending",
+        "price": 250
+      }
+    ],
+    "deliverables": [
+      {
+        "name": "Prerequisites & Locomotion Sword Plan",
+        "type": "doc",
+        "url": "#"
+      }
+    ],
+    "journals": [
+      {
+        "date": "2026-03-11T11:17:29.761Z",
+        "type": "update",
+        "message": "Mise � jour journali�re : L`impl�mentation de la roue des Counters avance bien. Le composant g�re les correspondances d`armes."
+      },
+      {
+        "date": "2026-03-08T19:00:00Z",
+        "type": "update",
+        "message": "Création du repository Git effectuée. L'architecture C++ de base du CombatComponent a été implémentée avec succès. La locomotion de base (Montages) est fonctionnelle. Je m'attaque aux Notifies et traces d'armes pour la suite."
+      }
+    ],
+    "invoices": [
+      {
+        "id": "INV-2026-001",
+        "amount": 250,
+        "status": "pending",
+        "type": "virement"
+      }
+    ]
+  }
+}
