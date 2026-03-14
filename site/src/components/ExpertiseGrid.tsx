@@ -4,97 +4,73 @@ const domains = [
   {
     icon: "⚔️",
     title: "Architecture Gameplay",
-    line: "Systèmes modulaires & scalables",
-    tags: ["GAS", "Subsystems", "GameFeatures", "GameModes"],
+    line: "Systèmes modulaires et scalables",
+    tags: ["C++", "Subsystems", "GameFeatures", "Data-Driven"],
     detail: "Fondations C++ solides pour supporter des dizaines de systèmes interconnectés sans dette technique.",
+    prestations: ["Audit d'architecture", "Patterns de conception", "Migration Blueprint vers C++", "Systèmes de données"],
     media: null,
   },
   {
     icon: "🌐",
     title: "Netcode Authoritatif",
     line: "Multijoueur sans compromis",
-    tags: ["Replication", "RPC", "Client Prediction", "Rollback"],
+    tags: ["Replication", "RPC", "Client Prediction", "Iris"],
     detail: "Architecture anti-triche avec prédiction client et réconciliation serveur pour masquer la latence.",
+    prestations: ["Optimisation réseau", "Replication Graph", "Systèmes de tir prédictifs", "Profilage bande passante"],
     media: null,
   },
   {
     icon: "⚡",
-    title: "Optimisation CPU",
+    title: "Optimisation Performance",
     line: "Maintenir 60+ FPS sous charge",
-    tags: ["Profiling", "Object Pooling", "Task Graph", "Tick Budget"],
+    tags: ["Profiling", "Insights", "Task Graph", "Tick Budget"],
     detail: "Audit et élimination des goulots d'étranglement pour garantir des performances stables en production.",
-    media: null,
-  },
-  {
-    icon: "🧬",
-    title: "Migration C++",
-    line: "Du Blueprint au natif",
-    tags: ["Nativization", "UPROPERTY", "UFUNCTION", "Hot Reload"],
-    detail: "Traduction chirurgicale des 10% de Blueprints responsables de 90% des ralentissements.",
-    media: null,
-  },
-  {
-    icon: "🧩",
-    title: "Plugins UE5",
-    line: "Mécaniques encapsulées & réutilisables",
-    tags: ["Modules", "Slate", "Editor Extensions", "Fab Marketplace"],
-    detail: "Développement de plugins autonomes et testables, transférables entre projets.",
-    media: null,
-  },
-  {
-    icon: "📡",
-    title: "Réplication Massive",
-    line: "100+ joueurs, 0 desync",
-    tags: ["Iris", "Net Cull Distance", "Bandwidth Tuning", "Relevancy"],
-    detail: "Optimisation agressive du trafic réseau pour supporter des sessions massives sans rubberbanding.",
-    media: null,
-  },
-  {
-    icon: "🗡️",
-    title: "Systèmes de Combat",
-    line: "Hit detection, combos, dégâts",
-    tags: ["GAS", "Combo System", "Hitbox/Hurtbox", "Damage Pipeline"],
-    detail: "Pipelines de combat complets, du input buffering aux dégâts réseau-synchronisés.",
+    prestations: ["Profiling CPU/GPU", "Optimisation de Tick", "Object Pooling", "Réduction mémoire"],
     media: null,
   },
   {
     icon: "🏃",
-    title: "Animation Avancée",
-    line: "Locomotion fluide & procédurale",
-    tags: ["Motion Matching", "IK", "AnimGraph", "Root Motion"],
-    detail: "Systèmes de locomotion adaptatifs avec blending procédural et Turn In Place.",
+    title: "Animation Technique",
+    line: "Locomotion fluide et réactive",
+    tags: ["AnimBP", "Control Rig", "Linked Layers", "IK"],
+    detail: "Systèmes de locomotion adaptatifs avec rigging procédural et architecture d'animation propre.",
+    prestations: ["Configuration de Rigging", "Setups AnimBP complexes", "Audit et correction d'Animation", "Intégration de Combat"],
+    media: null,
+  },
+  {
+    icon: "🧩",
+    title: "Développement de Plugins",
+    line: "Mécaniques encapsulées et réutilisables",
+    tags: ["Modules", "Editor Extensions", "Slate", "API"],
+    detail: "Développement de plugins autonomes et testables, transférables entre projets.",
+    prestations: ["Outils pour l'éditeur", "Intégration d'API tierces", "Modules C++ isolés", "Support Marketplace"],
     media: null,
   },
   {
     icon: "🤖",
-    title: "IA & Behavior Trees",
-    line: "Ennemis intelligents & scalables",
-    tags: ["EQS", "Blackboard", "StateTree", "Mass AI"],
+    title: "Intelligence Artificielle",
+    line: "Comportements complexes et scalables",
+    tags: ["EQS", "StateTree", "Behavior Trees", "Mass AI"],
     detail: "Arbres de comportement modulaires avec perception environnementale et décision tactique.",
+    prestations: ["Logique de combat IA", "Systèmes de navigation", "Optimisation Mass AI", "FSM avancées"],
+    media: null,
+  },
+  {
+    icon: "📐",
+    title: "Mathématiques de Jeu",
+    line: "Calculs vectoriels et fonctions physiques",
+    tags: ["Vectors", "Quaternions", "Physics", "Curves"],
+    detail: "Implémentations complexes de trajectoires, calculs spatiaux et systèmes mécaniques avancés.",
+    prestations: ["Mouvement procédural", "Trajectoires de projectiles", "Systèmes de visée", "Simulations physiques"],
     media: null,
   },
   {
     icon: "💾",
-    title: "Backend & APIs",
-    line: "Connecter Unreal au cloud",
-    tags: ["HTTP Async", "WebSocket", "SaveGame", "PlayFab / AWS"],
+    title: "Infrastructure Backend",
+    line: "Persistance et services cloud",
+    tags: ["HTTP", "WebSocket", "AWS", "PlayFab"],
     detail: "Subsystems C++ dédiés pour la persistance, le matchmaking et les transactions sécurisées.",
-    media: null,
-  },
-  {
-    icon: "🔧",
-    title: "DevOps & CI/CD",
-    line: "Automatiser builds & déploiements",
-    tags: ["Build Pipeline", "Automation", "Perforce", "Git LFS"],
-    detail: "Pipelines de build automatisés avec tests de régression et déploiement continu.",
-    media: null,
-  },
-  {
-    icon: "🖥️",
-    title: "UI/UX Technique",
-    line: "Interfaces performantes & responsives",
-    tags: ["CommonUI", "Slate", "Widget Components", "Data Binding"],
-    detail: "Systèmes UI data-driven avec support multi-plateforme (clavier, manette, tactile).",
+    prestations: ["Sauvegarde cloud", "Systèmes de matchmaking", "Intégration de services", "API REST pour Unreal"],
     media: null,
   },
 ];
@@ -139,19 +115,34 @@ export default function ExpertiseGrid() {
               </div>
 
               {/* Description client-oriented */}
-              <p className="text-[var(--text-muted)] text-xs leading-relaxed mb-3">
+              <p className="text-[var(--text-muted)] text-xs leading-relaxed mb-4 italic">
                 {d.detail}
               </p>
 
+              {/* Liste des Prestations */}
+              <div className="mb-4">
+                <h4 className="text-[var(--cyan-glow)] text-[10px] font-mono uppercase tracking-widest mb-2 opacity-80">
+                  // Prestations
+                </h4>
+                <ul className="space-y-1">
+                  {d.prestations.map((p, j) => (
+                    <li key={j} className="flex items-center gap-2 text-white text-[11px] font-mono">
+                      <span className="w-1.5 h-1.5 bg-[var(--cyan-glow)] rounded-full shadow-[0_0_5px_var(--cyan-glow)]" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Slot Média (placeholder ou image/vidéo réelle) */}
               {d.media ? (
-                <div className="w-full h-24 rounded-md overflow-hidden">
+                <div className="w-full h-24 rounded-md overflow-hidden border border-[var(--border-subtle)]">
                   <img src={d.media} alt={d.title} className="w-full h-full object-cover" />
                 </div>
               ) : (
-                <div className="w-full h-20 rounded-md border border-dashed border-[var(--border-subtle)] bg-[rgba(0,0,0,0.3)] flex items-center justify-center gap-2">
-                  <span className="text-[var(--text-muted)] text-[10px] font-mono uppercase tracking-widest opacity-40">
-                    ▶ MEDIA
+                <div className="w-full h-16 rounded-md border border-dashed border-[var(--border-subtle)] bg-[rgba(0,0,0,0.3)] flex items-center justify-center gap-2">
+                  <span className="text-[var(--text-muted)] text-[9px] font-mono uppercase tracking-widest opacity-30">
+                    ▶ MEDIA PLACEHOLDER
                   </span>
                 </div>
               )}
